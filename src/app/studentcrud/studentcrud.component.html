@@ -21,15 +21,29 @@
     </div>
 
     <div class="form-group">
-        <label>Address</label>
-        <input type="text" class="form-control"  [(ngModel)]="address" [ngModelOptions]="{standalone: true}" id="address" placeholder="Enter Address"> 
+        <label>Age</label>
+        <input type="text" class="form-control"  [(ngModel)]="age" [ngModelOptions]="{standalone: true}" id="age" placeholder="Enter Age"> 
       </div>
 
       <div class="form-group">
-        <label>Phone</label>
-        <input type="text" class="form-control" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" id="phone" placeholder="Enter Phone"> 
+        <label>Parent Contact</label>
+        <input type="text" class="form-control" [(ngModel)]="parentcontact" [ngModelOptions]="{standalone: true}" id="parentcontact" placeholder="Enter Parent Contact"> 
       </div>
-    <button type="submit" (click)="save()" class="btn btn-primary">Submit</button>
+      
+      <div class="form-group">
+        <label>Allergies</label>
+        <input type="text" class="form-control" [(ngModel)]="allergies" [ngModelOptions]="{standalone: true}" id="allergies" placeholder="Enter Allergiest"> 
+      </div>
+
+      <div class="form-group">
+        <label>Special Notes</label>
+        <input type="text" class="form-control" [(ngModel)]="specialnotes" [ngModelOptions]="{standalone: true}" id="specialnotes" placeholder="Enter Special Notes"> 
+      </div>
+
+
+
+
+    <button type="submit" (click)="save()" class="btn btn-primary">Add Child / Update</button>
   </form>
 </div>
 </div>
@@ -40,16 +54,19 @@
   <thead>    
   <tr>
       <th scope="col">Name</th>
-      <th scope="col">Address</th>
-      <th scope="col">Phone</th>  
-      <th scope="col">Option</th>
+      <th scope="col">Age</th>
+      <th scope="col">Parent Contact</th>  
+      <th scope="col">Allergies</th>
+      <th scope="col">Special Notes</th>
     </tr>
   </thead>
   <tbody>
       <tr *ngFor="let StudentItem of StudentArray">
       <td>{{StudentItem.name  | uppercase}}</td>
-      <td>{{StudentItem.address }}</td>
-      <td>{{StudentItem.phone }}</td>
+      <td>{{StudentItem.age }}</td>
+      <td>{{StudentItem.parentcontact }}</td>
+      <td>{{StudentItem.allergies }}</td>
+      <td>{{StudentItem.specialnotes }}</td>
       <td>
         <button type="button" class="btn btn-success" (click)="setUpdate(StudentItem)">Edit</button>
         <button type="button" class="btn btn-danger" (click)="setDelete(StudentItem)">Delete</button>            

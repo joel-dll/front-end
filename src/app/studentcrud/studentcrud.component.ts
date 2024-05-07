@@ -14,8 +14,10 @@ export class StudentcrudComponent
   currentStudentID = "";
 
   name: string ="";
-  address: string ="";
-  phone: string ="";
+  age: string ="";
+  parentcontact: string ="";
+  allergies: string ="";
+  specialnotes: string ="";
   
   constructor(private http: HttpClient ) 
   {
@@ -37,8 +39,10 @@ export class StudentcrudComponent
   setUpdate(data: any) 
   {
    this.name = data.name;
-   this.address = data.address;
-   this.phone = data.phone;
+   this.age = data.age;
+   this.parentcontact = data.parentcontact;
+   this.allergies = data.allergies;
+   this.specialnotes = data.specialnotes;
 
    this.currentStudentID = data._id;
   
@@ -48,8 +52,11 @@ export class StudentcrudComponent
   {
     let bodyData = {
       "name" : this.name,
-      "address" : this.address,
-      "phone" : this.phone,
+      "age" : this.age,
+      "parentcontact" : this.parentcontact,
+      "allergies" : this.allergies,
+      "specialnotes" : this.specialnotes
+
 
     };
     
@@ -90,18 +97,25 @@ register()
 
     let bodyData = {
       "name" : this.name,
-      "address" : this.address,
-      "phone" : this.phone, 
-  };
-    this.http.post("http://localhost:8000/user/create",bodyData).subscribe((resultData: any)=>
+      "age" : this.age,
+      "parentcontact" : this.parentcontact,
+      "allergies" : this.allergies,
+      "specialnotes" : this.specialnotes
+    };
+    
+      this.http.post("http://localhost:8000/user/create",bodyData).subscribe((resultData: any)=>
     {
         console.log(resultData);
         alert("Child Registered Successfully")
          //this.getAllEmployee();
         this.name = '';
-        this.address = '';
-        this.phone  = '';
+        this.age = '';
+        this.parentcontact  = '';
+        this.allergies = '';
+        this.specialnotes = '';
+        
         this.getAllStudent();
+    
     });
   }
 }
