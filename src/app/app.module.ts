@@ -8,13 +8,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { MenuComponent } from './menu/menu.component';
+import { OurNurseryComponent } from './our-nursery/our-nursery.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentcrudComponent,
-    MenuComponent
+    MenuComponent,
+    OurNurseryComponent,
+    OurTeamComponent,
+    ContactComponent
   
   ],
   imports: [
