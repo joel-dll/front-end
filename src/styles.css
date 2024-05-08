@@ -100,3 +100,57 @@ h1{font-size:25px;font-weight: bolder;}
 }
 
 
+.card2{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 60px;
+   
+   
+    
+}
+
+
+.image img {
+    align-items: center;
+    width: 38%;
+    object-fit: cover;
+  }
+
+
+  .buttonsmenu{
+    font-family: Lato;
+    display: inline-block;
+    padding-bottom: 0%;
+    
+    
+    
+    
+  
+
+   
+  }
+  .buttonmenu{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #eee3ea;
+    box-shadow: none;
+    border-radius: 9%;
+    border: #ffffff;
+    font-size: larger;
+    
+   
+
+    
+  }
+  .buttonmenu:hover
+  {
+    background-color: #fde1f3;
+   
+  }
+  .buttonmenu:active
+  {
+    background-color: #efc5ff;
+  }
+
+ 

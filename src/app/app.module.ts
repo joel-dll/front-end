@@ -7,11 +7,15 @@ import { StudentcrudComponent } from './studentcrud/studentcrud.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { MenuComponent } from './menu/menu.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentcrudComponent
+    StudentcrudComponent,
+    MenuComponent
+  
   ],
   imports: [
     BrowserModule,
