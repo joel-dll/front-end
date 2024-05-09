@@ -87,6 +87,7 @@ font-weight: bold;
     border: #ffffff;
     font-size: larger;
     
+    
    
 
     
@@ -131,7 +132,8 @@ font-weight: bold;
 .buttonsmenuournursery{
     margin-left: 44%;
     margin-top: 12%;
-    padding-top: 0%;
+    padding-top: 3%;
+    padding-bottom: 2%;
     
 }
 .imageteam {
@@ -188,3 +190,30 @@ border-color: rgb(224, 224, 224);
     border-radius: 45px; 
     font-family: 10px;
 }
+.namebox {
+    margin-left: 38%;
+    padding-bottom: 2%;
+    
+}
+.mailbox{
+    margin-left: 38%; 
+    padding-bottom: 2%;
+}
+.messagebox{
+    margin-left: 38%;
+    display:flex;
+    height: 116px;
+    width: 590px; 
+   
+    
+}
+
+
+
+.buttonsmenuournursery{
+    margin-top: 1%;
+    padding-bottom: 5%;
+
+}
+
+   

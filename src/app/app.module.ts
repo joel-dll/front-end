@@ -10,7 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './menu/menu.component';
 import { OurNurseryComponent } from './our-nursery/our-nursery.component';
 import { OurTeamComponent } from './our-team/our-team.component';
-import { ContactComponent } from './contact/contact.component';
+
+import { Contact2Component } from './contact2/contact2.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     MenuComponent,
     OurNurseryComponent,
     OurTeamComponent,
-    ContactComponent
+    
+    Contact2Component
   
   ],
   imports: [
