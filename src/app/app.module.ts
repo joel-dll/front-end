@@ -11,7 +11,8 @@ import { MenuComponent } from './menu/menu.component';
 import { OurNurseryComponent } from './our-nursery/our-nursery.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 
-import { Contact2Component } from './contact2/contact2.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+
 
 
 @NgModule({
@@ -21,9 +22,8 @@ import { Contact2Component } from './contact2/contact2.component';
     MenuComponent,
     OurNurseryComponent,
     OurTeamComponent,
+    ContactFormComponent
     
-    Contact2Component
-  
   ],
   imports: [
     BrowserModule,
