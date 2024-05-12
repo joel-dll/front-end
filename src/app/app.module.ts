@@ -12,6 +12,8 @@ import { OurNurseryComponent } from './our-nursery/our-nursery.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 
@@ -22,7 +24,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     MenuComponent,
     OurNurseryComponent,
     OurTeamComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    LoginComponent,
+    SignUpComponent
     
   ],
   imports: [

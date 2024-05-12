@@ -13,15 +13,18 @@ export class ContactFormComponent {
     message: ''
   };
 
-  constructor(private http: HttpClient) { }
-
+  constructor(private http: HttpClient) {}
 
   submitContactForm() {
-    
-    this.http.post('http://localhost:8000/contact', this.contact)
-      .subscribe(
-        response => console.log('Form submitted successfully', response),
-        error => console.error('There was an error!', error)
-      );
+    const url = 'http://localhost:8000/contact';
+    this.http.post(url, this.contact).subscribe({
+      next: (response) => {
+        console.log('Form submitted successfully', response);
+        alert('Form submitted successfully');
+      },
+      error: (error) => {
+        console.error('There was an error!', error);
+      }
+    });
   }
 }
